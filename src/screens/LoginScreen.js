@@ -33,7 +33,7 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: "center",
         alignItems: "center",
-        backgroundColor: "#f0f8ff",
+        backgroundColor: "lightblue",
     },
     title: {
         fontSize: 24,
@@ -46,6 +46,7 @@ const styles = StyleSheet.create({
         borderRadius: 5,
     },
     textfields: {
+        backgroundColor: 'white',
         width: windowWidth * 0.8,
         height: 40,
         borderColor: 'gray',
