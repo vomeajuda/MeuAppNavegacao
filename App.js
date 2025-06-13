@@ -31,12 +31,12 @@ export default function App() {
           name="Login"
           component={LoginScreen}
           options={{
-            headerStyle: styles.headerStyle,
+            headerStyle: styles.headerStyleLogin,
             headerTitleStyle: styles.titleStyle,
           }}
         />
         <Stack.Screen name="Home" component={HomeScreen} options={{ headerShown: false }} />
-        <Stack.Screen name="Details" component={DetailsScreen} />
+        <Stack.Screen name="Details" component={DetailsScreen} options={{headerStyle: styles.headerStyleDetails}}/>
         <Stack.Screen name="Profile" component={ProfileScreen} options={{ headerShown: false }} />
       </Stack.Navigator>
     </NavigationContainer>
@@ -44,8 +44,11 @@ export default function App() {
 }
 
 const styles = StyleSheet.create({
-  headerStyle: {
+  headerStyleLogin: {
     backgroundColor: 'blue',
+  },
+  headerStyleDetails: {
+    backgroundColor: '#faf0e6',
   },
   titleStyle: {
     color: 'white',
